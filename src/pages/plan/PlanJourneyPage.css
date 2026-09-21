@@ -1,0 +1,485 @@
+/* ============================================================
+   HOMEPAGE — EDITORIAL REDESIGN
+   ============================================================ */
+
+.home-main {
+  background-color: var(--color-off-white);
+  padding-bottom: var(--space-20);
+}
+
+/* --- Hero Section --- */
+.hero-section {
+  padding-block: var(--space-12) var(--space-8);
+  background-color: var(--color-off-white);
+}
+
+.hero-header-text {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto var(--space-10);
+}
+
+.hero-title {
+  font-size: var(--font-size-display);
+  color: var(--color-navy);
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-4);
+  text-transform: uppercase;
+  font-weight: 800;
+}
+
+.hero-subtitle {
+  font-size: var(--font-size-xl);
+  color: var(--color-text-secondary);
+}
+
+.hero-interactive-zone {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.hero-search-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-3);
+  margin-bottom: var(--space-6);
+  width: 100%;
+  max-width: 480px;
+}
+
+.search-label {
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--color-navy);
+}
+
+.country-search-wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.country-search-wrapper .search-icon {
+  position: absolute;
+  left: var(--space-4);
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--color-text-muted);
+}
+
+.country-search-input {
+  width: 100%;
+  padding: var(--space-3) var(--space-4) var(--space-3) var(--space-10);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-base);
+  box-shadow: var(--shadow-sm);
+  transition: all var(--transition-fast);
+}
+
+.country-search-input:focus {
+  outline: none;
+  border-color: var(--color-navy);
+  box-shadow: 0 0 0 3px rgba(26, 39, 68, 0.1);
+}
+
+/* --- Map --- */
+.hero-map-wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  position: relative;
+}
+
+/* Remove focus outlines from map paths */
+.hero-map-wrapper path:focus,
+.hero-map-wrapper path:active,
+.hero-map-wrapper path:focus-visible {
+  outline: none !important;
+}
+
+.geo-default {
+  fill: #E9ECEF;
+  stroke: #FFFFFF;
+  stroke-width: 0.75px;
+  outline: none;
+  transition: fill 250ms ease;
+}
+
+.geo-default:hover {
+  fill: #CED4DA;
+  cursor: pointer;
+}
+
+.geo-selected {
+  fill: var(--color-navy) !important;
+  stroke: #FFFFFF;
+  stroke-width: 0.75px;
+  outline: none;
+}
+
+.geo-india {
+  fill: var(--color-saffron) !important;
+  stroke: #FFFFFF;
+  stroke-width: 0.75px;
+  outline: none;
+}
+
+.map-route-line {
+  stroke: var(--color-navy);
+  stroke-width: 2px;
+  stroke-dasharray: 6, 6;
+  fill: none;
+  opacity: 0.6;
+  animation: dash 20s linear infinite;
+}
+
+@keyframes dash {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+/* --- Selection Panel --- */
+.hero-selection-panel {
+  margin-top: var(--space-8);
+  width: 100%;
+  max-width: 720px;
+  background: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-5) var(--space-6);
+  opacity: 0.5;
+  transition: opacity var(--transition-base), box-shadow var(--transition-base);
+}
+
+.hero-selection-panel.active {
+  opacity: 1;
+  box-shadow: var(--shadow-md);
+  border-color: var(--color-gray-300);
+}
+
+.selection-placeholder {
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+.selection-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-6);
+  flex-wrap: wrap;
+}
+
+.selection-route {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  flex: 1;
+}
+
+.route-origin, .route-destination {
+  display: flex;
+  flex-direction: column;
+}
+
+.route-label {
+  font-size: var(--font-size-xs);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-bottom: 2px;
+}
+
+.route-country {
+  font-size: var(--font-size-lg);
+  color: var(--color-navy);
+  font-weight: 600;
+}
+
+.route-arrow {
+  color: var(--color-gray-400);
+  font-size: var(--font-size-xl);
+}
+
+.selection-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+}
+
+.btn-change-country {
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  text-decoration: underline;
+}
+
+.btn-change-country:hover {
+  color: var(--color-navy);
+}
+
+.btn-explore {
+  padding-inline: var(--space-8);
+}
+
+
+/* --- Visa Services Editorial List --- */
+.visa-services-section {
+  padding-block: var(--space-16);
+  background-color: var(--color-white);
+  border-top: 1px solid var(--color-gray-200);
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.section-heading {
+  font-size: var(--font-size-2xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-8);
+  border-bottom: 2px solid var(--color-navy);
+  padding-bottom: var(--space-4);
+  display: inline-block;
+}
+
+.services-editorial-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.service-row {
+  display: flex;
+  align-items: center;
+  padding: var(--space-6) 0;
+  border-bottom: 1px solid var(--color-gray-200);
+  transition: background-color var(--transition-fast), padding-left var(--transition-base);
+  text-decoration: none;
+  color: inherit;
+}
+
+.service-row:hover {
+  background-color: var(--color-gray-50);
+  padding-left: var(--space-4);
+}
+
+.service-number {
+  font-size: var(--font-size-xl);
+  font-weight: 300;
+  color: var(--color-gray-400);
+  width: 60px;
+  flex-shrink: 0;
+}
+
+.service-details {
+  flex: 1;
+}
+
+.service-title {
+  font-size: var(--font-size-xl);
+  color: var(--color-navy);
+  margin-bottom: var(--space-1);
+}
+
+.service-desc {
+  color: var(--color-text-secondary);
+  font-size: var(--font-size-md);
+}
+
+.service-arrow {
+  color: var(--color-gray-300);
+  transition: color var(--transition-fast), transform var(--transition-fast);
+}
+
+.service-row:hover .service-arrow {
+  color: var(--color-saffron);
+  transform: translateX(4px);
+}
+
+.highlight-row {
+  background-color: var(--color-gray-50);
+}
+
+/* --- Section Heading Small --- */
+.section-heading-sm {
+  font-size: var(--font-size-lg);
+  color: var(--color-navy);
+  margin-bottom: var(--space-6);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 600;
+}
+
+/* --- Finder --- */
+.visa-finder-section {
+  padding-block: var(--space-12);
+}
+
+.finder-banner {
+  background-color: var(--color-navy-light);
+  color: var(--color-white);
+  padding: var(--space-8) var(--space-10);
+  border-radius: var(--radius-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-6);
+}
+
+.finder-title {
+  color: var(--color-white);
+  font-size: var(--font-size-2xl);
+  margin-bottom: var(--space-2);
+}
+
+.finder-desc {
+  color: var(--color-gray-300);
+}
+
+/* --- Quick Actions --- */
+.quick-actions-section {
+  padding-bottom: var(--space-12);
+}
+
+.quick-actions-flex {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.quick-action-link {
+  font-size: var(--font-size-sm);
+  font-weight: 500;
+  padding: var(--space-3) var(--space-5);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  transition: all var(--transition-fast);
+}
+
+.quick-action-link:hover {
+  background-color: var(--color-navy);
+  color: var(--color-white);
+  border-color: var(--color-navy);
+}
+
+/* --- Explore Country --- */
+.explore-country-section {
+  padding-bottom: var(--space-12);
+}
+
+.country-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.country-pill {
+  font-size: var(--font-size-sm);
+  padding: var(--space-2) var(--space-4);
+  border-bottom: 2px solid transparent;
+  color: var(--color-text-secondary);
+  transition: all var(--transition-fast);
+}
+
+.country-pill:hover {
+  color: var(--color-navy);
+  border-bottom-color: var(--color-navy);
+}
+
+/* --- Accordions --- */
+.important-info-section {
+  padding-bottom: var(--space-12);
+}
+
+.info-accordions {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid var(--color-border);
+}
+
+.info-accordion {
+  border-bottom: 1px solid var(--color-border);
+}
+
+.info-accordion summary {
+  padding: var(--space-5) 0;
+  font-size: var(--font-size-md);
+  font-weight: 500;
+  color: var(--color-navy);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  list-style: none;
+}
+
+.info-accordion summary::-webkit-details-marker {
+  display: none;
+}
+
+.info-accordion[open] summary .acc-icon {
+  transform: rotate(180deg);
+}
+
+.acc-icon {
+  transition: transform var(--transition-fast);
+  color: var(--color-gray-400);
+}
+
+.acc-content {
+  padding-bottom: var(--space-5);
+  color: var(--color-text-secondary);
+  line-height: var(--line-height-relaxed);
+}
+
+/* --- Help Links --- */
+.help-section {
+  padding-bottom: var(--space-12);
+}
+
+.help-links {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.help-link {
+  color: var(--color-navy);
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+
+.help-link:hover {
+  color: var(--color-saffron);
+}
+
+/* Responsive Overrides */
+@media (max-width: 768px) {
+  .hero-title {
+    font-size: var(--font-size-3xl);
+  }
+  .selection-route {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+  }
+  .route-arrow {
+    transform: rotate(90deg);
+    margin-left: 10px;
+  }
+  .service-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: var(--space-2);
+    position: relative;
+  }
+  .service-arrow {
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}

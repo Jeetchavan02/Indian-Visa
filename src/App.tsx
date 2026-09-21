@@ -13,6 +13,7 @@ import AdvisoriesPage from './pages/advisories/AdvisoriesPage';
 import AccountPage from './pages/account/AccountPage';
 import NotFoundPage from './pages/notFound/NotFoundPage';
 import VisaFinderPage from './pages/finder/VisaFinderPage';
+import PlanJourneyPage from './pages/plan/PlanJourneyPage';
 
 // Skip to main content link for accessibility
 function SkipLink() {
@@ -32,6 +33,7 @@ function AppRoutes() {
         <div className="page-content">
           <Routes>
             <Route path="/" element={<HomePage />} />
+            <Route path="/plan" element={<PlanJourneyPage />} />
             <Route path="/visa-info" element={<VisaInformationPage />} />
             <Route path="/apply" element={<ApplicationPage />} />
             <Route path="/track" element={<TrackPage />} />
