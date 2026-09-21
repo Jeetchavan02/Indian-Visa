@@ -1,0 +1,85 @@
+.track-form-title {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-4);
+}
+
+.track-form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-5);
+}
+
+.track-search-card {
+  box-shadow: var(--shadow-md);
+}
+
+.track-not-found-icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-4);
+}
+
+.track-result-header {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.track-app-id {
+  font-size: var(--font-size-xl);
+  font-weight: var(--font-weight-bold);
+  color: var(--color-navy);
+  letter-spacing: 0.04em;
+}
+
+.track-app-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--font-size-sm);
+  color: var(--color-text-muted);
+  margin-top: var(--space-2);
+}
+
+.track-visa-type {
+  font-weight: var(--font-weight-medium);
+}
+
+.track-separator {
+  color: var(--color-gray-300);
+}
+
+.track-status-badge {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: var(--space-2) var(--space-4);
+  border-radius: var(--radius-full);
+  font-size: var(--font-size-sm);
+  font-weight: var(--font-weight-semibold);
+  white-space: nowrap;
+}
+
+.status-submitted { background: var(--color-info-bg); color: var(--color-info); }
+.status-review { background: var(--color-warning-bg); color: var(--color-warning); }
+.status-processing { background: var(--color-saffron-light); color: var(--color-saffron); }
+.status-decision { background: var(--color-success-bg); color: var(--color-success); }
+
+.track-timeline-title {
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: var(--space-5);
+  color: var(--color-text-muted);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  font-size: var(--font-size-xs);
+}
+
+.ml-2 { margin-left: var(--space-2); }
+
+@media (max-width: 640px) {
+  .track-form-grid { grid-template-columns: 1fr; }
+  .track-result-header { flex-direction: column; }
+}
