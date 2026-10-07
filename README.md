@@ -196,14 +196,14 @@ To redesign an existing cluttered and poorly structured website — the Indian V
 ### 🖼️ Before vs After (Redesign Showcase)
 
 #### The Legacy Portal (Before)
-![Legacy Indian Visa Portal](./public/assets/legacy-portal.png)
+![Legacy Indian Visa Portal](./public/legacy-portal.png)
 *The existing Indian Visa Online portal suffered from visual clutter, poor navigation hierarchy, and lack of geo-contextual personalisation.*
 
 #### The Modernised Portal (After)
-![Modernised Home Page](./public/assets/modern-home.png)
+![Modernised Home Page](./public/modern-home.png)
 *A cleaner, task-focused homepage with a progressive disclosure application flow.*
 
-![Plan Journey Feature](./public/assets/modern-plan.png)
+![Plan Journey Feature](./public/modern-plan.png)
 *The new 'Plan Your Journey' feature with an interactive geographic map.*
 
 ### 🔍 Analysis of Existing Portal
