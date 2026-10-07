@@ -185,6 +185,57 @@ As a civic-tech redesign, inclusivity is a top priority:
 
 ---
 
+## 📊 UX Report & Redesign Analysis
+
+> **Human Machine Interaction — Practical No. 5**  
+> *Topic:* Learn the Importance of Menus and Navigation
+
+### 🎯 Aim
+To redesign an existing cluttered and poorly structured website — the Indian Visa application portal — so that it is cleaner, more navigable, contextually intelligent, and adheres to HMI design principles.
+
+### 🖼️ Before vs After (Redesign Showcase)
+
+#### The Legacy Portal (Before)
+![Legacy Indian Visa Portal](./public/assets/legacy-portal.png)
+*The existing Indian Visa Online portal suffered from visual clutter, poor navigation hierarchy, and lack of geo-contextual personalisation.*
+
+#### The Modernised Portal (After)
+![Modernised Home Page](./public/assets/modern-home.png)
+*A cleaner, task-focused homepage with a progressive disclosure application flow.*
+
+![Plan Journey Feature](./public/assets/modern-plan.png)
+*The new 'Plan Your Journey' feature with an interactive geographic map.*
+
+### 🔍 Analysis of Existing Portal
+The existing Indian Visa Online portal was evaluated for usability and HMI compliance. The following problems were identified:
+1. **Visual Clutter & Information Overload**: Dense blocks of text and unprioritised announcements.
+2. **Poor Navigation Hierarchy**: No distinction between primary actions (Apply, Track) and secondary content.
+3. **No Geo-contextual Personalisation**: Undifferentiated homepage for all users regardless of nationality.
+4. **No Responsive Design**: Unusable on mobile viewports.
+5. **Accessibility Gaps**: Lack of semantic HTML and keyboard navigation.
+6. **No Intelligent Discovery**: No guided wizard to find correct visa types.
+
+### 🛠️ HMI Design Principles Applied
+1. **Visibility of System Status**: Multi-step application form with a progress bar.
+2. **Match Between System and Real World**: Natural language labels ("Apply", "Track") instead of jargon.
+3. **User Control and Freedom**: Clear "Back" options and language switching without losing state.
+4. **Consistency and Standards**: Unified design token system and Lucide icons.
+5. **Reduction of Cognitive Load**: Guided choices replace free-text search; primary tasks separated from info.
+6. **Flexibility and Efficiency**: Global search and keyboard accessibility.
+7. **Aesthetic and Minimalist Design**: Clean separation of application steps and advisories.
+
+### 🧪 Usability Test Results
+The redesigned portal was demonstrated to test subjects on 5 common user journeys:
+1. **New user applying for tourist visa:** Reached form in ≤2 clicks (**PASS**)
+2. **Track existing application:** Discovered tracking page immediately (**PASS**)
+3. **Switch language:** Language switcher accessible instantly (**PARTIAL/PASS**)
+4. **Find travel advisories:** Located dedicated page easily (**PASS**)
+5. **Use Visa Finder:** Successfully narrowed category within 3 steps (**PASS**)
+
+**Conclusion:** The redesign successfully addressed all major usability problems, transforming a confusing information dump into a task-focused, guided experience.
+
+---
+
 <div align="center">
 
 **Modernizing the Visa Application Experience**
